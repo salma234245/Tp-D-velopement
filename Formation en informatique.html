@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formation en informatique</title>
+</head>
+
+<body>
+  <header>
+    <h1>Formation en informatique</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Les modules</h2>
+      <ul>
+        <li>Développement Web</li>
+        <li>Réseaux informatiques</li>
+        <li>Bases de données</li>
+        <li>Algorithmique</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Les étapes de l’inscription</h2>
+      <ol type="I">
+        <li>Inscription</li>
+        <li>Validation du dossier</li>
+        <li>Choix de la formation</li>
+        <li>Confirmation de l’inscription</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Liste imbriquée</h2>
+      <ul>
+        <li>Développement Web
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ol>
+        </li>
+        <li>Réseaux informatiques
+          <ol>
+            <li>Ethernet</li>
+            <li>TCP/IP</li>
+            <li>Routage</li>
+          </ol>
+        </li>
+        <li>Bases de données
+          <ol>
+            <li>MySQL</li>
+            <li>Oracle</li>
+          </ol>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formulaire d’inscription</h2>
+
+      <form method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Informations personnelles</legend>
+
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom"
+                 placeholder="Entrez votre nom" required>
+          <br><br>
+
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom"
+                 placeholder="Entrez votre prénom" required>
+          <br><br>
+
+          <label for="email">Adresse e-mail :</label>
+          <input type="email" id="email" name="email"
+                 placeholder="Entrez votre e-mail" required>
+          <br><br>
+
+          <label for="password">Mot de passe :</label>
+          <input type="password" id="password" name="password" required>
+          <br><br>
+
+          <label for="date-naissance">Date de naissance :</label>
+          <input type="date" id="date-naissance" name="date_naissance">
+          <br><br>
+
+          <label for="age">Âge :</label>
+          <input type="number" id="age" name="age" min="18" max="60">
+          <br><br>
+
+          <label for="telephone">Numéro de téléphone :</label>
+          <input type="tel" id="telephone" name="telephone"
+                 placeholder="Ex. : 06 12 34 56 78" required>
+          <br><br>
+
+          <p>Sexe :</p>
+          <label>
+            <input type="radio" name="sexe" value="femme" required>
+            Femme
+          </label>
+          <label>
+            <input type="radio" name="sexe" value="homme">
+            Homme
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Formation</legend>
+
+          <p>Niveau d’études :</p>
+          <label>
+            <input type="radio" name="niveau" value="1" required>
+            1re année
+          </label>
+          <label>
+            <input type="radio" name="niveau" value="2">
+            2e année
+          </label>
+          <label>
+            <input type="radio" name="niveau" value="3">
+            3e année
+          </label>
+          <br><br>
+
+          <label for="filiere">Filière :</label>
+          <select id="filiere" name="filiere" required>
+            <option value="">-- Choisir une filière --</option>
+            <option value="genie-informatique">Génie informatique</option>
+            <option value="reseaux-telecommunications">Réseaux et télécommunications</option>
+            <option value="intelligence-artificielle">Intelligence artificielle</option>
+            <option value="cybersecurite">Cybersécurité</option>
+          </select>
+          <br><br>
+
+          <label for="message">Pourquoi souhaitez-vous suivre cette formation ?</label><br>
+          <textarea id="message" name="message" rows="5" cols="40"
+                    placeholder="Écrivez votre réponse ici..."></textarea>
+          <br><br>
+
+          <label for="cv">Importer votre CV :</label>
+          <input type="file" id="cv" name="cv"
+                 accept=".pdf,.doc,.docx" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Compétences</legend>
+
+          <p>Technologies maîtrisées :</p>
+          <label>
+            <input type="checkbox" name="technologies[]" value="html">
+            HTML
+          </label><br>
+          <label>
+            <input type="checkbox" name="technologies[]" value="css">
+            CSS
+          </label><br>
+          <label>
+            <input type="checkbox" name="technologies[]" value="javascript">
+            JavaScript
+          </label><br>
+          <label>
+            <input type="checkbox" name="technologies[]" value="python">
+            Python
+          </label>
+
+          <p>Domaines d’intérêt :</p>
+          <label>
+            <input type="checkbox" name="domaines[]" value="web">
+            Développement Web
+          </label><br>
+          <label>
+            <input type="checkbox" name="domaines[]" value="reseaux">
+            Réseaux
+          </label><br>
+          <label>
+            <input type="checkbox" name="domaines[]" value="cybersecurite">
+            Cybersécurité
+          </label><br>
+          <label>
+            <input type="checkbox" name="domaines[]" value="ia">
+            Intelligence artificielle
+          </label>
+        </fieldset>
+
+        <br>
+        <button type="submit">S’inscrire</button>
+        <button type="reset">Réinitialiser</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
