@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>TP2 javascript</title>
+</head>
+<body>
+    <h1>Exercice 1</h1>
+    <section>
+        <button type="button" id="commencer" onclick="demarrer()">Commencer</button>
+    </section>
+
+    <h1>Exercice 2</h1>
+    <section id="outils">
+        <h2>Outils de calcul</h2>
+        <label for="nombre">N :</label>
+        <input type="text" id="nombre">
+        <button type="button" id="btSomme">Calculer la somme</button>
+        <button type="button" id="btPairs">Afficher les nombres pairs</button>
+        <p id="resultat"></p>
+    </section>
+    <h1>Exercice 3</h1>
+    <section id="cours">
+    <h2 id="titreCours">Découvrir JavaScript</h2>
+    <p class="chapitre">Les variables</p>
+    <p class="chapitre important">Les fonctions</p>
+    <p class="chapitre">Les événements</p>
+    <button type="button" id="modifier">
+    Modifier la présentation
+    </button>
+</section>
+
+<section>
+      <h1>Exercice 4</h1>
+<h2>Zone interactive</h2>
+<label for="prenom">Prénom :</label>
+<input type="text" id="prenom"
+onfocus="mettreEnEvidence(this)"
+onblur="retablirStyle(this)"
+oninput="afficherSaisie(this)">
+<p id="apercu"></p>
+<button type="button" id="selectionner">
+Sélectionner le texte
+</button>
+<p id="survol"
+onmouseover="changerCouleur(this)"
+onmouseout="retablirCouleur(this)">
+Survolez ce texte.
+</p>
+</section>
+<h1>Exercice 5</h1>
+<form id="formInscription" name="inscription">
+    <p>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom">
+    </p>
+
+    <p>
+        <label for="profession">Profession :</label>
+        <select id="profession" name="profession">
+            <option value="">Choisir une profession</option>
+            <option value="Technicien">Technicien</option>
+            <option value="Ingénieur">Ingénieur</option>
+            <option value="Médecin">Médecin</option>
+        </select>
+    </p>
+
+    <p>
+        Sexe :
+        <input type="radio" id="sexeH" name="sexe" value="H">
+        <label for="sexeH">H</label>
+        <input type="radio" id="sexeF" name="sexe" value="F">
+        <label for="sexeF">F</label>
+    </p>
+
+    <p>
+        Langues :
+        <input type="checkbox" id="langueAr" name="langue" value="Arabe">
+        <label for="langueAr">Arabe</label>
+        <input type="checkbox" id="langueFr" name="langue" value="Français">
+        <label for="langueFr">Français</label>
+    </p>
+
+    <button type="submit">Inscrire</button>
+    <button type="reset">Effacer</button>
+</form>
+
+<p id="message"></p>
+<pre id="recapitulatif"></pre>
+</body>
+</html>
